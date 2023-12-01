@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.hdwitzys.databinding.FragmentEntreesBinding;
+import com.example.hdwitzys.databinding.FragmentDrinksBinding;
 
 public class DrinksFragment extends Fragment {
 
-    private FragmentEntreesBinding binding;
+    private FragmentDrinksBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DrinksViewModel entreesViewModel =
+        DrinksViewModel drinksViewModel =
                 new ViewModelProvider(this).get(DrinksViewModel.class);
 
-        binding = FragmentEntreesBinding.inflate(inflater, container, false);
+        binding = FragmentDrinksBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textDrinks;
