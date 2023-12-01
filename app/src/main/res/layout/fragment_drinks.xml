@@ -8,7 +8,7 @@
 
     <TextView
         android:text="this is the drink fragment"
-        android:id="@+id/text_drink"
+        android:id="@+id/textDrinks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

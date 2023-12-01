@@ -24,8 +24,8 @@ public class IceCreamFragment extends Fragment {
         binding = FragmentEntreesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textIceCream;
-        IceCreamViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+//        final TextView textView = binding.textIceCream;
+//        IceCreamViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

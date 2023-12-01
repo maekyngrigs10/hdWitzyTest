@@ -6,15 +6,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import androidx.core.view.GravityCompat;
+
 
 import androidx.annotation.NonNull;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.hdwitzys.R; // Make sure to replace with the correct R class for your project
+import com.example.hdwitzys.R;
 import com.example.hdwitzys.databinding.FragmentHomeBinding;
+import com.example.hdwitzys.ui.drinks.DrinksFragment;
 import com.example.hdwitzys.ui.entrees.EntreesFragment;
+import com.example.hdwitzys.ui.icecream.IceCreamFragment;
+import com.example.hdwitzys.ui.checkout.CheckoutFragment;
+import com.example.hdwitzys.ui.sides.SidesFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeFragment extends Fragment implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,7 +40,7 @@ public class HomeFragment extends Fragment implements NavigationView.OnNavigatio
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         // Set up NavigationView listener
-        NavigationView navigationView = root.findViewById(R.id.navigation_view);
+        NavigationView navigationView = root.findViewById(R.id.nav_view); // Use the correct ID here
         navigationView.setNavigationItemSelectedListener(this);
 
         return root;
@@ -45,22 +52,17 @@ public class HomeFragment extends Fragment implements NavigationView.OnNavigatio
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Replace with the appropriate fragment transaction for HomeFragment
-            replaceFragment(new HomeFragment());
-        }
-        else if (id == R.id.nav_entrees) {
+            // No need to replace with HomeFragment since you are already in the HomeFragment
+            // Add any specific behavior if needed
+        } else if (id == R.id.nav_entrees) {
             replaceFragment(new EntreesFragment());
-        }
-        else if (id == R.id.nav_sides) {
+        } else if (id == R.id.nav_sides) {
             replaceFragment(new SidesFragment());
-        }
-        else if (id == R.id.nav_drinks) {
+        } else if (id == R.id.nav_drinks) {
             replaceFragment(new DrinksFragment());
-        }
-        else if (id == R.id.nav_icecream) {
+        } else if (id == R.id.nav_icecream) {
             replaceFragment(new IceCreamFragment());
-        }
-        else if (id == R.id.nav_checkout) {
+        } else if (id == R.id.nav_checkout) {
             replaceFragment(new CheckoutFragment());
         }
 

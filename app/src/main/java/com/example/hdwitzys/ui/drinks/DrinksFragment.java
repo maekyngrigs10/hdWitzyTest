@@ -25,7 +25,7 @@ public class DrinksFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textDrinks;
-        DrinksViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+//        DrinksViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

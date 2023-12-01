@@ -8,18 +8,38 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.hdwitzys.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_entrees"
         android:name="com.example.hdwitzys.ui.entrees.EntreesFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:label="Entrees"
+        tools:layout="@layout/fragment_entrees" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.hdwitzys.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_sides"
+        android:name="com.example.hdwitzys.ui.sides.SidesFragment"
+        android:label="Sides"
+        tools:layout="@layout/fragment_sides" />
+
+    <fragment
+        android:id="@+id/nav_drinks"
+        android:name="com.example.hdwitzys.ui.drinks.DrinksFragment"
+        android:label="Drinks"
+        tools:layout="@layout/fragment_drinks" />
+
+    <fragment
+        android:id="@+id/nav_icecream"
+        android:name="com.example.hdwitzys.ui.icecream.IceCreamFragment"
+        android:label="Ice Cream"
+        tools:layout="@layout/fragment_icecream" />
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="com.example.hdwitzys.ui.checkout.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout" />
+
+
 </navigation>
