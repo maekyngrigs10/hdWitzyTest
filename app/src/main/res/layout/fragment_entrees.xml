@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.entrees.EntreesFragment">
 
     <TextView
-        android:text="this is the home fragment"
-        android:id="@+id/text_home"
+        android:text="this is the entree fragment"
+        android:id="@+id/text_entree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

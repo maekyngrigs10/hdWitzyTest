@@ -1,16 +1,16 @@
-package com.example.hdwitzys.ui.gallery;
+package com.example.hdwitzys.ui.sides;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class SidesViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public SidesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is sides fragment");
     }
 
     public LiveData<String> getText() {
