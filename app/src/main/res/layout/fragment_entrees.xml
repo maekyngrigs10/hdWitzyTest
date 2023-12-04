@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
         android:text="this is the entree fragment"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -20,32 +20,191 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entreesTopTXT"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/introEntreeTXT" />
 
     <TextView
-        android:id="@+id/entreesTopTXT"
-        android:layout_width="0dp"
+        android:id="@+id/introEntreeTXT"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="624dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="622dp"
         android:text="ENTREES"
         android:textAlignment="center"
-        android:textSize="60dp"
+        android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/textEntree"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="630dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="73dp">
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="59dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/itemEntreeIMG1"
+            android:layout_width="100dp"
             android:layout_height="100dp"
-            android:orientation="horizontal"></LinearLayout>
+            android:layout_weight="1"
+            android:src="@drawable/cheeseburger" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="hamburger/cheeseburger"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/itemEntreeAdd1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_add_24"
+            app:tint="#4361EE" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="169dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemEntreeIMG2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/cheeseburger" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="double ritz"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/itemEntreeAdd2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_add_24"
+            app:tint="#4361EE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="279dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemEntreeIMG3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/cheeseburger" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="fish sandwich"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/itemEntreeAdd3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_add_24"
+            app:tint="#4361EE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="389dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemEntreeIMG4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/cheeseburger" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="chicken grill"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/itemEntreeAdd4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_add_24"
+            app:tint="#4361EE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="499dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemEntreeIMG5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/cheeseburger" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="pbj"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/itemEntreeAdd5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_add_24"
+            app:tint="#4361EE" />
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
