@@ -9,16 +9,12 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-
-    <!-- Include the AppBar layout -->
     <include
         android:id="@+id/app_bar_main"
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-
-    <!-- NavigationView remains as is -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -28,19 +24,4 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
 
-<!--    &lt;!&ndash; activity_main.xml &ndash;&gt;-->
-<!--    <FrameLayout-->
-<!--        android:id="@+id/content_frame"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"/>-->
-
-
-
-<!--    &lt;!&ndash; Place the Toolbar inside the AppBar layout &ndash;&gt;-->
-<!--    <androidx.appcompat.widget.Toolbar-->
-<!--        android:id="@+id/toolbar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="?attr/actionBarSize"-->
-<!--        android:background="@color/purple_200" />-->
-<!--    -->
 </androidx.drawerlayout.widget.DrawerLayout>
