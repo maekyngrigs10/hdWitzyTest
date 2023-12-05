@@ -6,27 +6,27 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@android:drawable/btn_star"
+            android:icon="@drawable/baseline_home_24"
             android:title="Home" />
         <item
             android:id="@+id/nav_entrees"
-            android:icon="@drawable/checkoutvec"
+            android:icon="@drawable/burgerclip"
             android:title="Entrees" />
         <item
             android:id="@+id/nav_sides"
-            android:icon="@drawable/sides"
+            android:icon="@drawable/fryclip"
             android:title="Sides" />
         <item
             android:id="@+id/nav_drinks"
-            android:icon="@drawable/drinks"
+            android:icon="@drawable/drinkclip"
             android:title="Drinks" />
         <item
             android:id="@+id/nav_icecream"
-            android:icon="@drawable/icecream"
+            android:icon="@drawable/icecreamclip"
             android:title="Ice Cream" />
         <item
             android:id="@+id/nav_checkout"
-            android:icon="@drawable/checkout"
+            android:icon="@drawable/cartclip"
             android:title="Checkout" />
     </group>
 </menu>
