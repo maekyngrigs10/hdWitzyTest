@@ -6,6 +6,116 @@
     android:layout_height="match_parent"
     tools:context=".ui.sides.SidesFragment">
 
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="264dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemSidesIMG1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/sides" />
+
+        <TextView
+            android:id="@+id/itemSidesDesc1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Side Salad"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$4.00"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="164dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemSidesIMG2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/sides" />
+
+        <TextView
+            android:id="@+id/itemSidesDesc2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Onion Rings"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$3.00"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="59dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemSidesIMG3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/sides" />
+
+        <TextView
+            android:id="@+id/itemSidesDesc3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Shoestring Fries"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$3.00"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textSide"
         android:layout_width="match_parent"
@@ -22,4 +132,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.958" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

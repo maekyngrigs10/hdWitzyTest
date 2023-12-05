@@ -6,6 +6,116 @@
     android:layout_height="match_parent"
     tools:context=".ui.drinks.DrinksFragment">
 
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="59dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemDrinksIMG3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/drinks" />
+
+        <TextView
+            android:id="@+id/itemDrinksDesc3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Small Drink"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$1.00"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="164dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemDrinksIMG2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/drinks" />
+
+        <TextView
+            android:id="@+id/itemDrinksDesc2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Medium Drink"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$2.00"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="264dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemDrinksIMG1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/drinks" />
+
+        <TextView
+            android:id="@+id/itemDrinksDesc1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Large Drink"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$3.00"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textDrinks"
         android:layout_width="match_parent"
