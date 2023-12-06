@@ -23,10 +23,12 @@ public class IceCreamFragment extends Fragment {
         viewModel = new ViewModelProvider(requireActivity()).get(SharedOrderViewModel.class);
 
         View view = inflater.inflate(R.layout.fragment_icecream, container, false);
-
-        setupItemButton(view, R.id.singleScoopButton, 1.00, "Single Scoop");
-        setupItemButton(view, R.id.doubleScoopButton, 2.00, "Double Scoop");
-        setupItemButton(view, R.id.tripleScoopButton, 3.00, "Triple Scoop");
+        setupItemButton(view, R.id.singleScoopConeButton, 1.00, "Single Scoop Cone");
+        setupItemButton(view, R.id.singleScoopCupButton, 1.00, "Single Scoop Cup");
+        setupItemButton(view, R.id.doubleScoopConeButton, 2.00, "Double Scoop Cone");
+        setupItemButton(view, R.id.doubleScoopCupButton, 2.00, "Double Scoop Cup");
+        setupItemButton(view, R.id.tripleScoopConeButton, 3.00, "Triple Scoop Cone");
+        setupItemButton(view, R.id.tripleScoopCupButton, 3.00, "Triple Scoop Cup");
         setupItemButton(view, R.id.milkshakeButton, 3.50, "Milkshake");
         setupItemButton(view, R.id.rootBeerFloatButton, 3.00, "Root Beer Float");
         setupItemButton(view, R.id.maltButton, 3.50, "Malt");
