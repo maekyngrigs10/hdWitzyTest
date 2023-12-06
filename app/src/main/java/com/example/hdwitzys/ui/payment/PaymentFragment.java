@@ -1,4 +1,4 @@
-package com.example.hdwitzys.ui.checkout;
+package com.example.hdwitzys.ui.payment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -26,33 +26,9 @@ public class PaymentFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_checkout, container, false);
-
-        viewModel = new ViewModelProvider(requireActivity()).get(SharedOrderViewModel.class);
-
-        totalCostTextView = view.findViewById(R.id.totalCostTextView);
-        checkoutListView = view.findViewById(R.id.checkoutListView);
-
-        adapter = new OrderItemAdapter(getContext(), viewModel.getOrderItems().getValue(), viewModel);
-        checkoutListView.setAdapter(adapter);
-
-        viewModel.getTotalCost().observe(getViewLifecycleOwner(), totalCost ->
-                totalCostTextView.setText("Total: $" + String.format("%.2f", totalCost)));
-
-        viewModel.getOrderItems().observe(getViewLifecycleOwner(), orderItems -> {
-            adapter.setOrderItems(orderItems);
-            adapter.notifyDataSetChanged();
-        });
+        View view = inflater.inflate(R.layout.fragment_payment, container, false);
 
         // Set up a click listener for the "Continue To Payment" button
-        Button continueToPaymentButton = view.findViewById(R.id.paymentButton);
-        continueToPaymentButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to the PaymentFragment when the button is clicked
-                Navigation.findNavController(v).navigate(R.id.action_checkoutFragment_to_paymentFragment);
-            }
-        });
 
         return view;
     }

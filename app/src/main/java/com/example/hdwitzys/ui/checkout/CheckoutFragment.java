@@ -4,12 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
+
 import com.example.hdwitzys.R;
 import com.example.hdwitzys.ui.OrderItemAdapter;
 import com.example.hdwitzys.ui.SharedOrderViewModel;
@@ -41,7 +44,14 @@ public class CheckoutFragment extends Fragment {
             adapter.setOrderItems(orderItems);
             adapter.notifyDataSetChanged();
         });
-
+        Button continueToPaymentButton = view.findViewById(R.id.paymentButton);
+        continueToPaymentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to the PaymentFragment when the button is clicked
+                Navigation.findNavController(v).navigate(R.id.action_checkoutFragment_to_paymentFragment);
+            }
+        });
         return view;
     }
 }
