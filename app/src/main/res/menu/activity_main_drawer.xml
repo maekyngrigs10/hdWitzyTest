@@ -28,5 +28,9 @@
             android:id="@+id/nav_checkout"
             android:icon="@drawable/cartclip"
             android:title="Checkout" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/creditcard"
+            android:title="Payment" />
     </group>
 </menu>

@@ -47,8 +47,9 @@ public class EntreesFragment extends Fragment {
     // Replace this with your actual method to get entrees data
     private ArrayList<String> getEntreesList() {
         ArrayList<String> entreesList = new ArrayList<>();
-        // Populate the list with entrees
-        entreesList.add("Cheeseburger");
+//        Populate the list with entrees
+      entreesList.add("Cheeseburger");
+        entreesList.add("Grigburger");
         // Add more entrees as needed
         return entreesList;
     }

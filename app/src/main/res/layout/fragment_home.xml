@@ -6,31 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/textHome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Welcome to H.D. Witzy's "
-        android:textAlignment="center"
-        android:textColor="#cb4c4e"
-        android:textSize="40dp"
+    <ImageView
+        android:id="@+id/welcomeBG"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pasture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/homeIMG"
         android:layout_width="225dp"
         android:layout_height="224dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="253dp"
         android:src="@drawable/logo"
-        app:layout_constraintBottom_toBottomOf="@+id/textHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <TextView
+        android:id="@+id/homeTXT"
+        android:layout_width="307dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="sans-serif"
+        android:text="Good Food Made From Locally Sourced Ingredients"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textFontWeight="700"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="204dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="204dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

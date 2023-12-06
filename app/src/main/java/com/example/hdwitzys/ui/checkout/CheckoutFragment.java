@@ -57,6 +57,8 @@ public class CheckoutFragment extends Fragment {
         ArrayList<String> orderItemList = new ArrayList<>();
         // Populate the list with items in the order
         orderItemList.add("Cheeseburger");
+        orderItemList.add("Cheeseburger2");
+        orderItemList.add("Cheeseburger3");
         // Add more items as needed
         return orderItemList;
     }
