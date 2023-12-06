@@ -22,7 +22,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/sides" />
+            android:src="@drawable/fryclip" />
 
         <TextView
             android:id="@+id/itemSidesDesc1"
@@ -59,7 +59,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/sides" />
+            android:src="@drawable/fryclip" />
 
         <TextView
             android:id="@+id/itemSidesDesc2"
@@ -95,7 +95,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/sides" />
+            android:src="@drawable/fryclip" />
 
         <TextView
             android:id="@+id/itemSidesDesc3"

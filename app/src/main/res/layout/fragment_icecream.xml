@@ -22,7 +22,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/icecream" />
+            android:src="@drawable/icecreamclip" />
 
         <TextView
             android:id="@+id/itemIceDesc4"
@@ -58,7 +58,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/icecream" />
+            android:src="@drawable/icecreamclip" />
 
         <TextView
             android:id="@+id/itemIceDesc3"
@@ -95,7 +95,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/icecream" />
+            android:src="@drawable/icecreamclip" />
 
         <TextView
             android:id="@+id/itemIceDesc2"
@@ -132,7 +132,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/icecream" />
+            android:src="@drawable/icecreamclip" />
 
         <TextView
             android:id="@+id/itemIceDesc1"

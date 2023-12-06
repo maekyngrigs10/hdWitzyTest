@@ -21,7 +21,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/drinks" />
+            android:src="@drawable/drinkclip" />
 
         <TextView
             android:id="@+id/itemDrinksDesc3"
@@ -58,7 +58,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/drinks" />
+            android:src="@drawable/drinkclip" />
 
         <TextView
             android:id="@+id/itemDrinksDesc2"
@@ -95,7 +95,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:src="@drawable/drinks" />
+            android:src="@drawable/drinkclip" />
 
         <TextView
             android:id="@+id/itemDrinksDesc1"
