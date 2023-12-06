@@ -10,36 +10,19 @@
         android:id="@+id/entreesListView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
         android:background="#f0f0f0"
         android:divider="#dddddd"
         android:dividerHeight="1dp"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEntree" />
-
-    <TextView
-        android:id="@+id/textEntree"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
-        android:text="this is the entree fragment"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="59dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="9dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,22 +30,22 @@
 
         <ImageView
             android:id="@+id/itemEntreeIMG1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/burgerclip" />
 
         <TextView
             android:id="@+id/itemEntreeDesc1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Hamburger / Cheeseburger"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/itemEntreeButton1"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
@@ -74,8 +57,8 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="169dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="95dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,23 +66,23 @@
 
         <ImageView
             android:id="@+id/itemEntreeIMG2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/burgerclip" />
 
         <TextView
             android:id="@+id/itemEntreeDesc2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Double  Ritz Burger"
             android:textAlignment="viewStart"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/itemEntreeButton2"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
@@ -110,8 +93,8 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="279dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="180dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,23 +102,23 @@
 
         <ImageView
             android:id="@+id/itemEntreeIMG3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/burgerclip" />
 
         <TextView
             android:id="@+id/itemEntreeDesc3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Fish Sandwich"
             android:textAlignment="viewStart"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/itemEntreeButton3"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
@@ -147,8 +130,8 @@
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="389dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="265dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -156,23 +139,23 @@
 
         <ImageView
             android:id="@+id/itemEntreeIMG4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/burgerclip" />
 
         <TextView
             android:id="@+id/itemEntreeDesc4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Grilled Chicken Sandwich"
             android:textAlignment="viewStart"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/itemEntreeButton4"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
@@ -184,8 +167,8 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="499dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="350dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -193,29 +176,137 @@
 
         <ImageView
             android:id="@+id/itemEntreeIMG5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/burgerclip" />
 
         <TextView
             android:id="@+id/itemEntreeDesc5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Peanut Butter Jelly Sandwich"
             android:textAlignment="viewStart"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/itemEntreeButton5"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
-            android:text="$2.00"
+            android:text="$4.50"
             android:textColor="#FFFFFF" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="435dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemEntreeIMG6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/burgerclip" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="All-American Hot Dog"
+            android:textAlignment="viewStart"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/itemEntreeButton6"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$3.50"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="520dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemEntreeIMG7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/burgerclip" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Coney Dog"
+            android:textAlignment="viewStart"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/itemEntreeButton7"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$3.50"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="605dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemEntreeIMG8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/burgerclip" />
+
+        <TextView
+            android:id="@+id/itemEntreeDesc8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Coney Dog w/ Cheese"
+            android:textAlignment="viewStart"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/itemEntreeButton8"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$4.00"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 

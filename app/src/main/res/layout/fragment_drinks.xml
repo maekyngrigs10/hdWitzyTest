@@ -6,34 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".ui.drinks.DrinksFragment">
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
+    <ListView
+        android:id="@+id/drinksListView"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="59dp"
+        android:layout_height="0dp"
+        android:background="#f0f0f0"
+        android:divider="#dddddd"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="9dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/itemDrinksIMG3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/itemDrinkIMG1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/drinkclip" />
 
         <TextView
-            android:id="@+id/itemDrinksDesc3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/itemDrinkDesc1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Small Drink"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/itemDrinkButton1"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
@@ -45,69 +57,68 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="164dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="95dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/itemDrinksIMG2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/itemDrinkIMG2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/drinkclip" />
 
         <TextView
-            android:id="@+id/itemDrinksDesc2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/itemDrinkDesc2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Medium Drink"
-            android:textSize="18dp" />
+            android:textAlignment="viewStart"
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/itemDrinkButton2"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
             android:text="$2.00"
             android:textColor="#FFFFFF" />
-
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/linearLayout3"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="264dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="180dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/itemDrinksIMG1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/itemDrinkIMG3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:src="@drawable/drinkclip" />
 
         <TextView
-            android:id="@+id/itemDrinksDesc1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/itemDrinkDesc3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:text="Large Drink"
-            android:textSize="18dp" />
+            android:textAlignment="viewStart"
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/itemDrinkButton3"
             android:layout_width="84dp"
             android:layout_height="75dp"
             android:layout_weight="1"
@@ -116,20 +127,9 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textDrinks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="this is the drink fragment"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
+
+
+        =
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

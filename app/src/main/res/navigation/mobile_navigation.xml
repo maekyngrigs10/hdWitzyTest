@@ -47,9 +47,21 @@
         android:label="Payment"
         tools:layout="@layout/fragment_payment" />
 
-    <action
-        android:id="@+id/action_homeFragment_to_checkoutFragment"
-        app:destination="@layout/fragment_checkout" />
+    <fragment
+        android:id="@+id/nav_icecreamcustomize"
+        android:name="com.example.hdwitzys.ui.icecreamcustomize.IceCreamCustomizeFragment"
+        android:label="Ice Cream Customize"
+        tools:layout="@layout/fragment_icecreamcustomize" />
 
+    <fragment
+        android:id="@+id/nav_entreecustomize"
+        android:name="com.example.hdwitzys.ui.entreecustomize.EntreeCustomizeFragment"
+        android:label="Entree Customize"
+        tools:layout="@layout/fragment_entreecustomize" />
+
+    <!-- Define the navigation action from CheckoutFragment to PaymentFragment -->
+    <action
+        android:id="@+id/action_checkoutFragment_to_paymentFragment"
+        app:destination="@id/nav_payment" />
 
 </navigation>

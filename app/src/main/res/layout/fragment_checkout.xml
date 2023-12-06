@@ -21,6 +21,14 @@
             android:textSize="18sp"
             android:textStyle="bold"/>
 
+        <TextView
+            android:id="@+id/totalCostTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total: $0.00"
+            android:textSize="18sp" />
+
         <ListView
             android:id="@+id/checkoutListView"
             android:layout_width="match_parent"
@@ -32,13 +40,14 @@
             android:dividerHeight="1dp"
             android:padding="8dp"/>
 
+
         <Button
-            android:id="@+id/deleteButton"
+            android:id="@+id/paymentButton"
             android:layout_width="375dp"
             android:layout_height="88dp"
             android:layout_gravity="end"
             android:layout_marginTop="16dp"
-            android:text="Delete Selected Item"
+            android:text="Continue To Payment"
             android:textColor="@color/black" />
     </LinearLayout>
 
