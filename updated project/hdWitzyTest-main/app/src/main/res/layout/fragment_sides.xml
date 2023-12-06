@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.sides.SidesFragment">
+
+        <!-- World's Greatest PB&J -->
+        <LinearLayout
+            android:id="@+id/itemSide1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/itemSideIMG1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/itemSideDesc1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="World's Greatest PB and J"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/itemSideButton1"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$4.50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Shoestring Fries -->
+        <LinearLayout
+            android:id="@+id/itemSide2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/itemSideIMG2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/itemSideDesc2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Shoestring Fries"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/itemSideButton2"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$3.00"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Steamed Vegetables -->
+        <LinearLayout
+            android:id="@+id/itemSide3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/itemSideIMG3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/itemSideDesc3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Steamed Vegetables"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/itemSideButton3"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$4.50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Side Salad -->
+        <LinearLayout
+            android:id="@+id/itemSide4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/itemSideIMG4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/itemSideDesc4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Side Salad"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/itemSideButton4"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$4.00"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Choice Garden Salad -->
+        <LinearLayout
+            android:id="@+id/itemSide5"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/itemSideIMG5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/itemSideDesc5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Choice Garden Salad"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/itemSideButton5"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$5.00"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Deluxe Garden Salad -->
+        <LinearLayout
+            android:id="@+id/itemSide6"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/itemSideIMG6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/itemSideDesc6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Deluxe Garden Salad"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/itemSideButton6"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$5.50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <!-- Taco Salad -->
+        <LinearLayout
+            android:id="@+id/itemSide7"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/tacoSaladImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/tacoSaladTextView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Taco Salad"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/tacoSaladButton"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$6.00"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Chicken Salad -->
+        <LinearLayout
+            android:id="@+id/itemSide8"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/chickenSaladImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/chickenSaladTextView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Chicken Salad"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/chickenSaladButton"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$6.50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

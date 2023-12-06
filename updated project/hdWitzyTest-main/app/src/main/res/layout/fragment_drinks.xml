@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.drinks.DrinksFragment">
+
+    <!-- Small Drink -->
+    <LinearLayout
+        android:id="@+id/itemDrink1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/itemDrinkIMG1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/drinks" />
+
+        <TextView
+            android:id="@+id/itemDrinkDesc1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Small Drink"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/itemDrinkButton1"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$1.00"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Medium Drink -->
+    <LinearLayout
+        android:id="@+id/itemDrink2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/itemDrink1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/itemDrinkIMG2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/drinks" />
+
+        <TextView
+            android:id="@+id/itemDrinkDesc2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Medium Drink"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/itemDrinkButton2"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$2.00"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Large Drink -->
+    <LinearLayout
+        android:id="@+id/itemDrink3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/itemDrink2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/itemDrinkIMG3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/drinks" />
+
+        <TextView
+            android:id="@+id/itemDrinkDesc3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Large Drink"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/itemDrinkButton3"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="$3.00"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
