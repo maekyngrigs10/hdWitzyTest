@@ -1,9 +1,11 @@
 package com.example.hdwitzys.ui;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 import com.example.hdwitzys.R;
 import com.example.hdwitzys.ui.SharedOrderViewModel.OrderItem;
@@ -12,25 +14,34 @@ import java.util.List;
 public class OrderItemAdapter extends ArrayAdapter<OrderItem> {
 
     private List<OrderItem> orderItems;
+    private SharedOrderViewModel viewModel;
 
-    public OrderItemAdapter(Context context, List<OrderItem> orderItems) {
-        super(context, android.R.layout.simple_list_item_2, orderItems);
+    public OrderItemAdapter(Context context, List<OrderItem> orderItems, SharedOrderViewModel viewModel) {
+        super(context, R.layout.list_item_order, orderItems);
         this.orderItems = orderItems;
+        this.viewModel = viewModel;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        OrderItem orderItem = getItem(position);
-
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(android.R.layout.simple_list_item_2, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_order, parent, false);
         }
 
-        TextView text1 = (TextView) convertView.findViewById(android.R.id.text1);
-        TextView text2 = (TextView) convertView.findViewById(android.R.id.text2);
+        OrderItem item = getItem(position);
 
-        text1.setText(orderItem.getItemName());
-        text2.setText("$" + String.format("%.2f", orderItem.getPrice()));
+        TextView tvName = convertView.findViewById(R.id.itemNameTextView);
+        tvName.setText(item.getItemName());
+
+        TextView tvPrice = convertView.findViewById(R.id.itemPriceTextView);
+        tvPrice.setText("$" + String.format("%.2f", item.getPrice())); // Display the item's price
+
+        Button deleteButton = convertView.findViewById(R.id.deleteButton);
+        deleteButton.setOnClickListener(v -> {
+            viewModel.subtractFromTotal(item.getPrice());
+            orderItems.remove(position);
+            notifyDataSetChanged();
+        });
 
         return convertView;
     }

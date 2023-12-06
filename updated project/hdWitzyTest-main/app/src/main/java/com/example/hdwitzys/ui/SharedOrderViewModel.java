@@ -15,15 +15,20 @@ public class SharedOrderViewModel extends ViewModel {
         }
     }
 
+    public void subtractFromTotal(double itemCost) {
+        if (totalCost.getValue() != null) {
+            totalCost.setValue(totalCost.getValue() - itemCost);
+        }
+    }
+
     public void addOrderItem(String itemName, double price) {
-        OrderItem item = new OrderItem(itemName, new ArrayList<>(), price);
+        OrderItem item = new OrderItem(itemName, price);
         List<OrderItem> currentItems = orderItems.getValue();
         if (currentItems != null) {
             currentItems.add(item);
             orderItems.setValue(currentItems);
+            addToTotal(price);
         }
-
-        addToTotal(price);
     }
 
     public MutableLiveData<Double> getTotalCost() {
@@ -42,12 +47,10 @@ public class SharedOrderViewModel extends ViewModel {
     // Class representing an item in the order
     public static class OrderItem {
         private String itemName;
-        private List<String> toppings;
         private double price;
 
-        public OrderItem(String itemName, List<String> toppings, double price) {
+        public OrderItem(String itemName, double price) {
             this.itemName = itemName;
-            this.toppings = toppings;
             this.price = price;
         }
 
@@ -58,11 +61,6 @@ public class SharedOrderViewModel extends ViewModel {
 
         public double getPrice() {
             return price;
-        }
-
-        // Optionally, if you want to display toppings in the order item list
-        public List<String> getToppings() {
-            return toppings;
         }
     }
 }

@@ -1,10 +1,10 @@
 package com.example.hdwitzys.ui.checkout;
+
 import com.example.hdwitzys.ui.OrderItemAdapter;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -19,7 +19,6 @@ public class CheckoutFragment extends Fragment {
     private SharedOrderViewModel viewModel;
     private TextView totalCostTextView;
     private ListView checkoutListView;
-    private Button deleteButton;
     private OrderItemAdapter adapter;
 
     @Nullable
@@ -31,22 +30,16 @@ public class CheckoutFragment extends Fragment {
 
         totalCostTextView = view.findViewById(R.id.totalCostTextView);
         checkoutListView = view.findViewById(R.id.checkoutListView);
-        deleteButton = view.findViewById(R.id.deleteButton);
 
-        adapter = new OrderItemAdapter(getContext(), viewModel.getOrderItems().getValue());
+        adapter = new OrderItemAdapter(getContext(), viewModel.getOrderItems().getValue(), viewModel);
         checkoutListView.setAdapter(adapter);
 
         viewModel.getTotalCost().observe(getViewLifecycleOwner(), totalCost ->
-                totalCostTextView.setText("Total: $" + String.format("%.2f", totalCost))
-        );
+                totalCostTextView.setText("Total: $" + String.format("%.2f", totalCost)));
 
         viewModel.getOrderItems().observe(getViewLifecycleOwner(), orderItems -> {
             adapter.setOrderItems(orderItems);
             adapter.notifyDataSetChanged();
-        });
-
-        deleteButton.setOnClickListener(v -> {
-            // Implement logic to delete selected item
         });
 
         return view;
