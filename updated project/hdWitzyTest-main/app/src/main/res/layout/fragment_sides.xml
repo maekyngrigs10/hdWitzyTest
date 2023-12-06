@@ -297,6 +297,41 @@
                 android:text="$6.50"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
+        <!-- chilly -->
+        <LinearLayout
+            android:id="@+id/itemSide9"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/itemSide8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/chillyImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/sides" />
+
+            <TextView
+                android:id="@+id/chillyTextView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Chilly"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/chillyButton"
+                android:layout_width="84dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text="$4.00"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

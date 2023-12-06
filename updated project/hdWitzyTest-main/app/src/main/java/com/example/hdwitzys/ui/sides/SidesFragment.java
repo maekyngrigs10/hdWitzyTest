@@ -32,6 +32,7 @@ public class SidesFragment extends Fragment {
         setupItemButton(view, R.id.itemSideButton6, 5.50, "Deluxe Garden Salad");
         setupItemButton(view, R.id.tacoSaladButton, 6.00, "Taco Salad");
         setupItemButton(view, R.id.chickenSaladButton, 6.50, "Chicken Salad");
+        setupItemButton(view, R.id.chillyButton, 4.00, "Chilly");
 
         return view;
     }
